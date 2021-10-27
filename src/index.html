@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gustavo Quiroga challenge</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body>
+    <div class="App">
+        <h1>Conversión de monendas</h1>
+
+
+        <div class="formContainer">
+            <label for="currFrom" class="formLabel">Moneda de origen:</label>
+            <select id="currFrom" value="EUR">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>JPY</option>
+            </select>
+        </div>
+
+        <div class="formContainer">
+            <label for="currTo" class="formLabel">Moneda de destino:</label>
+            <select id="currTo" value="USD">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>JPY</option>
+            </select>
+        </div>
+
+        <div class="formContainer">
+            <label for="amount" class="formLabel">Monto:</label>
+            <input id="amount" type="number" value=1 />
+        </div>
+
+        <div class="formContainer">
+            <label for="date" class="formLabel">Fecha:</label>
+            <input id="date" form type="date" value="date.toDateString()" onChange="(e) => console.log(e)" />
+        </div>
+
+
+
+        <h1>Valor de conversión $: </h1>
+        <h1 id="conversion">0</h1>
+
+    </div>
+    <div id="errors" ></div>
+
+    <script type="module" src="App.ts"></script>
+</body>
+
+</html>
